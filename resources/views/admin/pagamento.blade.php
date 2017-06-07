@@ -23,12 +23,10 @@
                         <p>Lista de Boletos emitidos</p>
 
                         <div class="table-responsive">
-                            <table class="table table-striped jambo_table bulk_action">
-                                <thead>
+                            <table class="table table-striped jambo_table bulk_action" >
+                                <thead >
                                     <tr class="headings">
-                                        <th>
-                                            <input type="checkbox" id="check-all" class="flat">
-                                        </th>
+                                        
                                         <th class="column-title">Númeto </th>
                                         <th class="column-title">Data </th>
                                         <th class="column-title">Código </th>
@@ -41,12 +39,10 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody >
                                     @foreach($pagamentos as $pagamento)
                                     <tr class="even pointer">
-                                        <td class="a-center ">
-                                            <input type="checkbox" class="flat" name="table_records">
-                                        </td>
+                                       
 
                                         <td class=" ">{{$pagamento->id_pagamento}}</td>
 

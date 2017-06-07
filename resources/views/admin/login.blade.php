@@ -34,7 +34,7 @@
                   <input type="text" class="form-control" name="email" placeholder="Login" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Senha" required="" />
+                  <input type="password" name="password" class="form-control" placeholder="Senha" required="" />
               </div>
               <div>
                   <button  class="btn btn-default submit" type="submit">Login</button>

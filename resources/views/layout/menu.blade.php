@@ -9,12 +9,10 @@
 
         <!-- menu profile quick info -->
         <div class="profile clearfix">
-            <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-            </div>
+            
             <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <span>Bem VIndo,</span>
+                <h2>{{Auth::user()->nome}}</h2>
             </div>
         </div>
         <!-- /menu profile quick info -->
@@ -27,7 +25,7 @@
                 <h3>Geral</h3>
                 <ul class="nav side-menu">
                     <li><a href="{{action('AdminController@index')}}"><i class="fa fa-home"></i> Home </a></li>
-                    <li><a href=""><i class="fa fa-laptop"></i>Estatisticas</a></li>
+                    <!--<li><a href=""><i class="fa fa-laptop"></i>Estatisticas</a></li>-->
                     <li><a href="{{action('AdminController@boleto')}}"><i class="fa fa-money"></i>Boletos</a></li>
                   </ul>
             </div>
@@ -37,7 +35,7 @@
         <!-- /menu footer buttons -->
         <div class="sidebar-footer">
            
-            <a data-toggle="tooltip" style="width: 100%" data-placement="top" title="Logout" href="">
+            <a data-toggle="tooltip" style="width: 100%" data-placement="top" title="Logout" href="/logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true" style="color: red"></span>
             </a>
         </div>
@@ -56,12 +54,12 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="images/img.jpg" alt="">John Doe
+                        {{Auth::user()->nome}}
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                         
-                        <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                        <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                     </ul>
                 </li>
 
