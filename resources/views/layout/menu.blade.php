@@ -1,4 +1,10 @@
-
+<style>
+    @media only screen and (max-width: 800px) {
+        .sidebar-footer{
+            width: 70px;
+        }
+    }
+</style>
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
@@ -9,7 +15,7 @@
 
         <!-- menu profile quick info -->
         <div class="profile clearfix">
-            
+
             <div class="profile_info">
                 <span>Bem Vindo,</span>
                 <h2>{{Auth::user()->nome}}</h2>
@@ -27,14 +33,14 @@
                     <li><a href="{{action('AdminController@index')}}"><i class="fa fa-home"></i> Home </a></li>
                     <!--<li><a href=""><i class="fa fa-laptop"></i>Estatisticas</a></li>-->
                     <li><a href="{{action('AdminController@boleto')}}"><i class="fa fa-money"></i>Boletos</a></li>
-                  </ul>
+                </ul>
             </div>
-           
+
         </div>
 
         <!-- /menu footer buttons -->
-        <div class="sidebar-footer">
-           
+        <div class="sidebar-footer hidden-print">
+
             <a data-toggle="tooltip" style="width: 100%" data-placement="top" title="Logout" href="/logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true" style="color: red"></span>
             </a>
@@ -58,12 +64,12 @@
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
-                        
+
                         <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                     </ul>
                 </li>
 
-                
+
             </ul>
         </nav>
     </div>
