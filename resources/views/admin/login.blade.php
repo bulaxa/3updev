@@ -31,7 +31,7 @@
               
               <input type="hidden" name="_token" value="{{csrf_token()}}">
               <div>
-                  <input type="text" class="form-control" name="email" placeholder="Login" required="" />
+                  <input type="email" class="form-control" name="email" placeholder="Login" required="" />
               </div>
               <div>
                   <input type="password" name="password" class="form-control" placeholder="Senha" required="" />

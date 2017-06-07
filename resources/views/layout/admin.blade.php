@@ -32,7 +32,7 @@
             </div>
             <footer>
                 <div class="pull-right">
-                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                    <a href="http://3upcomunicacao.com.br/"> 3up Comunicação</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>

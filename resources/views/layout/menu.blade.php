@@ -2,7 +2,7 @@
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-hand-peace-o"></i> <span>3up - Admin</span></a>
+            <a class="site_title"><i class="fa fa-hand-peace-o"></i> <span>3up - Cliente</span></a>
         </div>
 
         <div class="clearfix"></div>
@@ -11,7 +11,7 @@
         <div class="profile clearfix">
             
             <div class="profile_info">
-                <span>Bem VIndo,</span>
+                <span>Bem Vindo,</span>
                 <h2>{{Auth::user()->nome}}</h2>
             </div>
         </div>
