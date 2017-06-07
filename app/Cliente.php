@@ -17,7 +17,7 @@ class Cliente extends Model {
         
         $cliente = DB::table('tb_cliente')
                 ->join('tb_plano', 'tb_cliente.id_plano', '=', 'tb_plano.id_plano')
-                ->select('tb_cliente.*','tb_plano.tipo')
+                ->select('tb_cliente.*','tb_plano.tipo','tb_plano.valor')
                 ->where('tb_cliente.id_cliente',$idCliente)
                 ->first();
         
