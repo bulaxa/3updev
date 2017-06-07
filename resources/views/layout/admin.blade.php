@@ -7,6 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
         <title>3up - Admin | </title>
 
         <!--###############PRINCIPAL#################-->
