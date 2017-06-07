@@ -29,7 +29,7 @@
                 <div class="animate form login_form">
                     <section class="login_content">
                         <form method="post" action="{{action('AdminController@login')}}">
-                            <h1>Admin 3up</h1>
+                            <h1>Cliente 3up</h1>
 
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div>
